@@ -1,0 +1,16 @@
+PODS:
+  - SGChainView (0.1.0)
+
+DEPENDENCIES:
+  - SGChainView (from `../`)
+
+EXTERNAL SOURCES:
+  SGChainView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SGChainView: c798b3010dab13a8d9ab3eaa11c7e4df69c20e50
+
+PODFILE CHECKSUM: ee9ea1b1a420491ef3f9fbf0a58a5c8cec812cbe
+
+COCOAPODS: 1.10.1

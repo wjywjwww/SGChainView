@@ -1,0 +1,6 @@
+framework module SGChainView {
+  umbrella header "SGChainView-umbrella.h"
+
+  export *
+  module * { export * }
+}
