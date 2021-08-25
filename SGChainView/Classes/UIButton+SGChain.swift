@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-extension SGSpeedy where Base: UIButton {
+public extension SGSpeedy where Base: UIButton {
     
     @discardableResult func setTitle(_ title: String?, for state: UIControl.State = .normal) -> SGSpeedy<Base>{
         base.setTitle(title, for: state)
