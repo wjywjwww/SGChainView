@@ -19,8 +19,13 @@ public extension SGSpeedy where Base: UIButton {
         return self
     }
     
-    @discardableResult func setImage(_ image: UIImage?, for state: UIControl.State) -> SGSpeedy<Base>{
+    @discardableResult func setImage(_ image: UIImage?, for state: UIControl.State = .normal) -> SGSpeedy<Base>{
         base.setImage(image, for: state)
+        return self
+    }
+    
+    @discardableResult func setImageNamed(_ imageNamed: String, for state: UIControl.State = .normal) -> SGSpeedy<Base>{
+        base.setImage(UIImage(named: imageNamed), for: state)
         return self
     }
     
