@@ -6,18 +6,18 @@
 //
 
 import Foundation
-public protocol SGCompatible {
+public protocol JYCompatible {
     associatedtype CompatibleType
-    var sg: CompatibleType { get }
+    var jy: CompatibleType { get }
 }
 
-public extension SGCompatible {
-    var sg: SGSpeedy<Self> {
-        return SGSpeedy(self)
+public extension JYCompatible {
+    var jy: JYSpeedy<Self> {
+        return JYSpeedy(self)
     }
 }
 
-public final class SGSpeedy<Base> {
+public final class JYSpeedy<Base> {
     public let base: Base
     public init(_ base: Base) {
         self.base = base

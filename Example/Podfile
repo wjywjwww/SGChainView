@@ -4,10 +4,13 @@ platform :ios, '9.0'
 
 target 'SGChainView_Example' do
   pod 'SGChainView', :path => '../'
-
+  pod 'SnapKit'
+  pod 'QMUIKit/QMUIComponents/QMUITextField'
+  pod 'QMUIKit/QMUIComponents/QMUIButton'
+  pod 'QMUIKit/QMUIComponents/QMUITextView'
+  
   target 'SGChainView_Tests' do
     inherit! :search_paths
-
     
   end
 end

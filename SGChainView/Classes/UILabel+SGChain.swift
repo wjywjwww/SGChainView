@@ -8,28 +8,28 @@
 import Foundation
 import UIKit
 
-public extension SGSpeedy where Base: UILabel {
-    @discardableResult func setTextColor(color:UIColor) -> SGSpeedy<Base>{
+public extension JYSpeedy where Base: UILabel {
+    @discardableResult func textColor(_ color:UIColor) -> JYSpeedy<Base>{
         base.textColor = color
         return self
     }
     
-    @discardableResult func setText(text:String) -> SGSpeedy<Base>{
+    @discardableResult func text(_ text:String) -> JYSpeedy<Base>{
         base.text = text
         return self
     }
     
-    @discardableResult func setFont(font:UIFont) -> SGSpeedy<Base>{
+    @discardableResult func font(_ font:UIFont?) -> JYSpeedy<Base>{
         base.font = font
         return self
     }
     
-    @discardableResult func setTextAlignment(textAlignment:NSTextAlignment) -> SGSpeedy<Base>{
+    @discardableResult func textAlignment(_ textAlignment:NSTextAlignment) -> JYSpeedy<Base>{
         base.textAlignment = textAlignment
         return self
     }
     
-    @discardableResult func setNumberOfLines(numberOfLines:Int) -> SGSpeedy<Base>{
+    @discardableResult func numberOfLines(_ numberOfLines:Int) -> JYSpeedy<Base>{
         base.numberOfLines = numberOfLines
         return self
     }

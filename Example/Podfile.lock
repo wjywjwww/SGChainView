@@ -1,16 +1,49 @@
 PODS:
-  - SGChainView (0.1.0)
+  - QMUIKit/QMUIComponents/QMUIButton (4.1.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUILabel (4.1.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIMultipleDelegates (4.1.3):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITextField (4.1.3):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITextView (4.1.3):
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUICore (4.1.3):
+    - QMUIKit/QMUILog
+    - QMUIKit/QMUIWeakObjectContainer
+  - QMUIKit/QMUILog (4.1.3)
+  - QMUIKit/QMUIWeakObjectContainer (4.1.3)
+  - SGChainView (0.1.3):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUITextField
+    - SnapKit
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - QMUIKit/QMUIComponents/QMUIButton
+  - QMUIKit/QMUIComponents/QMUITextField
+  - QMUIKit/QMUIComponents/QMUITextView
   - SGChainView (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - QMUIKit
+    - SnapKit
 
 EXTERNAL SOURCES:
   SGChainView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SGChainView: c798b3010dab13a8d9ab3eaa11c7e4df69c20e50
+  QMUIKit: 1063a99f90aedd6e2dd65026ce0df46e6785e67b
+  SGChainView: 632ef310fd8eaea685513e70cee30adc44bd95a6
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: ee9ea1b1a420491ef3f9fbf0a58a5c8cec812cbe
+PODFILE CHECKSUM: b1f271894dd98c46c57536238b4fb1bb154bb52d
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.0
