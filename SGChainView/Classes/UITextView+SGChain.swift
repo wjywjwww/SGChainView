@@ -58,18 +58,6 @@ public extension JYSpeedy where Base: UITextView {
     }
 }
 
-public extension JYSpeedy where Base: QMUITextView {
-    @discardableResult func placeholderColor(_ color:UIColor) -> JYSpeedy<Base> {
-        base.placeholderColor = color
-        return self
-    }
-    
-    @discardableResult func placeholder(_ text:String) -> JYSpeedy<Base> {
-        base.placeholder = text
-        return self
-    }
-}
-
 private class DHTVBlockTarget {
     private let block: (String) -> Void
     

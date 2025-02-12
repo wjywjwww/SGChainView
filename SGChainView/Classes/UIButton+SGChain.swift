@@ -95,23 +95,6 @@ public extension JYSpeedy where Base: UIButton {
     }
 }
 
-public extension JYSpeedy where Base: QMUIButton {
-    @discardableResult func imagePosition(_ imagePosition:QMUIButtonImagePosition) -> JYSpeedy<Base>{
-        base.imagePosition = imagePosition
-        return self
-    }
-    
-    @discardableResult func spacingBetweenImageAndTitle(_ spacing:CGFloat) -> JYSpeedy<Base>{
-        base.spacingBetweenImageAndTitle = spacing
-        return self
-    }
-    
-    @discardableResult func qmui_outsideEdge(_ edgeInsets:UIEdgeInsets = UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5)) -> JYSpeedy<Base>{
-        base.qmui_outsideEdge = edgeInsets
-        return self
-    }
-}
-
 private class CSButtonBlockTarget {
     private let block: (UIButton) -> Void
     init(_ block: @escaping (UIButton) -> Void) {

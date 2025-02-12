@@ -49,18 +49,6 @@ public extension JYSpeedy where Base: UITextField {
     }
 }
 
-public extension JYSpeedy where Base: QMUITextField {
-    @discardableResult func placeholderColor(_ color:UIColor) -> JYSpeedy<Base>{
-        base.placeholderColor = color
-        return self
-    }
-    
-    @discardableResult func placeholder(_ text:String) -> JYSpeedy<Base>{
-        base.placeholder = text
-        return self
-    }
-}
-
 private class CSTFBlockTarget {
     private let block: (String) -> Void
     init(_ block: @escaping (String) -> Void) {
